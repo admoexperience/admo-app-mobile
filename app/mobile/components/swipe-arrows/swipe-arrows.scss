@@ -1,0 +1,28 @@
+.swipe-arrows {
+  position:absolute;
+  @include screen-size;
+  z-index: 10;
+
+  $sideBuffer: 40px;
+
+  .arrows {
+    opacity: 0.75;
+
+    .left, .right {
+      top: 500px;
+      position: absolute;
+      width: 51px;
+      height: 79px;
+    }
+
+    .left {
+      left: $sideBuffer;
+      background-image: url(/mobile/images/0-global/swipe-arrow-left.png);
+    }
+
+    .right {
+      right: $sideBuffer;
+      background-image: url(/mobile/images/0-global/swipe-arrow-right.png);
+    }
+  }
+}

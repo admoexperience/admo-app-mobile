@@ -1,0 +1,31 @@
+.start-container {
+  position:absolute;
+  @include screen-size;
+  top:-1080px;
+  -webkit-transition: top 1s;
+
+  .start-title{
+    top:110px;
+    left:0px;
+    width: 1920px;
+    height: 100px;
+    position: absolute;
+    font-size:120px;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    z-index: 50;
+  }
+  .start-text{
+    top:240px;
+    left:0px;
+    width: 1920px;
+    height: 45px;
+    position: absolute;
+    font-size:55px;
+    color: white;
+    text-align: center;
+    line-height: 45px;
+    z-index: 50;
+  }
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "name":"LG",
+    "items":[
+      {"name":"LG G2"},
+      {"name":"LG NEXUS 5"}
+    ]
+  },
+  {
+    "name":"Blackberry",
+    "items":[
+      {"name":"BLACKBERRY Z10"},
+      {"name":"BLACKBERRY 9720"}
+    ]
+  },
+  {
+    "name":"Samsung",
+    "items":[
+      {"name":"SAMSUNG GALAXY S4"},
+      {"name":"SAMSUNG GALAXY S4 MINI"}
+    ]
+  },
+  {
+    "name":"Apple",
+    "items":[
+      {"name":"APPLE IPHONE 5 16GB"},
+      {"name":"APPLE IPHONE 5 32GB"}
+    ]
+  },
+  {
+    "name":"Nokia",
+    "items":[
+      {"name":"NOKIA LUMIA 925"},
+      {"name":"NOKIA LUMIA 625"}
+    ]
+  }
+]

@@ -1,0 +1,25 @@
+.user-vector{
+  position:absolute;
+
+  top: 0px;
+  left: 240px;
+  height: 1080px;
+  width: 1440px;
+  z-index: 1000;
+  opacity: 0;
+
+  -webkit-transform-origin: 50% 100%;
+  -webkit-transition: -webkit-transform 0.5s, opacity 0.5s, top 0.5s;
+
+  .vector{
+    position:absolute;
+    top: 300px;
+    left: 400px;
+    height: 480px;
+    width: 640px;
+    opacity:0.25;
+
+    -webkit-transform: scale(2.25);
+	}
+
+}

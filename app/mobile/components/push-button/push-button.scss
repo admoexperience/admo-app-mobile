@@ -1,0 +1,209 @@
+$button-width: 400px;
+$button-height: 150px;
+$button-radius: $button-height/2;
+$shadow-thickness: 15px;
+
+.push-button {
+  @include screen-size;
+  position:absolute;
+  z-index: 100;
+  top:0px;
+  left:0px;
+
+  .add-scale{
+    -webkit-transform: scale(1.5);
+  }
+
+  .container{
+    position: absolute;
+    top:800px;
+    left:1300px;
+    width: $button-width;
+    height: $button-height;
+
+    .image{
+      position: absolute;
+      top:0px;
+      left:0px;
+      width: $button-width;
+      height: $button-height;
+
+      background-position: center;
+      background-repeat:no-repeat;
+      background-size: cover;
+
+      border-radius: $button-radius;
+      border-color: black;
+      -webkit-box-shadow: 0 10px 10px -5px rgba(0,0,0,0.6);
+    }
+
+    .image-proceed{
+      background-image: url(/mobile/images/0-global/button-background.png);
+    }
+
+    .image-start{
+      background-image: url(/mobile/images/0-global/button-background.png);
+    }
+
+    .sub-container{
+      position: absolute;
+      top:0px;
+      left:0px;
+      width: $button-width;
+      height: $button-height;
+
+      -webkit-transition: top 0.5s;
+
+      .icon{
+        z-index: 15;
+        position: absolute;
+        top:15px;
+        left:15px;
+        width: 120px;
+        height: 120px;
+
+        background-position: left center;
+        background-repeat:no-repeat;
+        background-size: cover;
+
+      }
+      .loading-bar{
+        z-index: 10;
+        position: absolute;
+        top:15px;
+        left:15px;
+        width: 120px;
+        height: 120px;
+        border-radius: 60px;
+        background-color:#3D7BAB;
+
+        -webkit-transition: opacity 1s;
+      }
+
+      .text{
+        z-index: 5;
+        position: absolute;
+        top:0px;
+
+        -webkit-transition: top 0.25s;
+      }
+
+      .icon-proceed{
+        background-image: url(/mobile/images/0-global/arrow.png);
+      }
+      .icon-start{
+        background-image: url(/mobile/images/3-start/right-hand.png);
+      }
+      .text-proceed{
+        left:60px;
+        width: $button-width;
+        height: $button-height;
+        position: absolute;
+        font-size:37px;
+        color: white;
+        text-align: center;
+        line-height: $button-height;
+        font-weight: bold;
+        letter-spacing: 2px;
+      }
+      .text-start{
+        left:55px;
+        width: $button-width;
+        height: $button-height;
+        position: absolute;
+        font-size:35px;
+        color: white;
+        text-align: center;
+        line-height: $button-height;
+      }
+
+    }
+
+    .shadow{
+      position: absolute;
+      top:0px;
+      left:0px;
+      width: $button-width;
+      height: $button-height;
+      z-index: 65;
+
+      border-color: black;
+
+      border-radius: $button-radius;
+
+      -webkit-box-shadow: inset 0 -10px 10px 0px rgba(0,0,0,0.3);
+      background-color:rgba(0,0,0,0);
+    }
+
+
+
+
+
+    .image-load{
+      -webkit-box-shadow: 0 0 0px 0px rgba(0,0,0,0.6);
+      -webkit-animation: imageShadowLoad 0.5s;
+    }
+    .image-unload{
+      -webkit-box-shadow: 0 10px 10px -5px rgba(0,0,0,0.6);
+      -webkit-animation: imageShadowUnload 0.5s;
+    }
+    .shadow-load{
+      -webkit-box-shadow: inset 0 10px 10px 5px rgba(0,0,0,0.5);
+      background-color:rgba(0,0,0,0.2);
+      -webkit-animation: shadowLoad 0.5s;
+    }
+    .shadow-unload{
+      -webkit-box-shadow: inset 0 -10px 10px 0px rgba(0,0,0,0.3);
+      background-color:rgba(0,0,0,0);
+      -webkit-animation: shadowUnload 0.5s;
+    }
+
+  }
+}
+
+
+@-webkit-keyframes imageShadowLoad
+{
+  0% {
+    -webkit-box-shadow: 0 10px 10px -5px rgba(0,0,0,0.6);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0px 0px rgba(0,0,0,0.6);
+  }
+}
+
+@-webkit-keyframes shadowLoad
+{
+  0% {
+    -webkit-box-shadow: inset 0 -10px 10px 0px rgba(0,0,0,0.3);
+    background-color:rgba(0,0,0,0);
+  }
+  100% {
+    -webkit-box-shadow: inset 0 10px 10px 5px rgba(0,0,0,0.5);
+    background-color:rgba(0,0,0,0.2);
+  }
+}
+
+
+
+@-webkit-keyframes imageShadowUnload
+{
+  0% {
+    -webkit-box-shadow: 0 0 0px 0px rgba(0,0,0,0.6);
+  }
+  100% {
+    -webkit-box-shadow: 0 10px 10px -5px rgba(0,0,0,0.6);
+  }
+}
+
+@-webkit-keyframes shadowUnload
+{
+  0% {
+    -webkit-box-shadow: inset 0 10px 10px 5px rgba(0,0,0,0.5);
+    background-color:rgba(0,0,0,0.2);
+  }
+  100% {
+    -webkit-box-shadow: inset 0 -10px 10px 0px rgba(0,0,0,0.3);
+    background-color:rgba(0,0,0,0);
+  }
+}

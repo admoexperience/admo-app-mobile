@@ -1,0 +1,44 @@
+.background-photo {
+  position:absolute;
+  @include screen-size;
+  top:0px;
+
+  .container{
+    width:1920px;
+    height: 1080px;
+    left:0px;
+
+    position:absolute;
+    z-index:1;
+    background-image: url(/mobile/images/2-guidance/blur.png);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+  }
+
+  .on-screen{
+    top:0px;
+  }
+
+  .off-screen{
+    top:1080px;
+  }
+
+  .on-top{
+    top:-1080px;
+  }
+
+  .top-animation{
+    -webkit-transition: top 1s;
+  }
+
+  .blurred-background{
+    background-image: url(/mobile/images/2-guidance/blur.png);
+  }
+  .wood-background{
+    background-image: url(/mobile/images/5-phone/wood.png);
+  }
+  .final-background{
+    background-image: url(/mobile/images/7-final/blur.png);
+  }
+}

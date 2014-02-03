@@ -1,0 +1,32 @@
+/*Variables*/
+@import "variables";
+
+// VARIABLES - Pre-asigned
+$removeMeIamHereToShowYou: #FFFFFF;
+$font: 'brandon';
+$brandBlue: #478ECB;
+
+// Screens
+@import "carousel-tilt/carousel-tilt.scss";
+@import "user-vector/user-vector.scss";
+@import "arc-menu/arc-menu.scss";
+@import "back-plain/back-plain.scss";
+@import "background-photo/background-photo.scss";
+@import "push-button/push-button.scss";
+@import "brand-carousel/brand-carousel.scss";
+@import "package-component/package-component.scss";
+@import "tracking-plain/tracking-plain.scss";
+@import "start-container/start-container.scss";
+
+/*Font*/
+@import "font.scss";
+body {
+  font-family: $font;
+}
+
+@import "screensaver/screensaver.scss";
+@import "circular-identifier/circular-identifier.scss";
+@import "sms-frame/sms-frame.scss";
+@import "mobile-logo-small/mobile-logo-small.scss";
+@import "mobile-logo-full/mobile-logo-full.scss";
+@import "swipe-arrows/swipe-arrows.scss";

@@ -1,0 +1,207 @@
+.brand-carousel {
+  position:absolute;
+  @include screen-size;
+  top:-1080px;
+  -webkit-transition: top 1s;
+
+  .brands-container{
+    position:absolute;
+    @include screen-size;
+
+    .selector-container{
+      top:390px;
+      height: 300px;
+      left:210px;
+      width:1500px;
+      overflow: hidden;
+      position:absolute;
+      z-index:45;
+    }
+
+    .selector{
+      top:0px;
+      height: 300px;
+      position:absolute;
+      z-index:45;
+      background-color: #478ECB;
+      width:300px;
+
+      &.offscreen-left{
+        left:-300px;
+      }
+      &.left{
+        left:0px;
+      }
+      &.mid-left{
+        left:300px;
+      }
+      &.center{
+        left:600px;
+      }
+      &.mid-right{
+        left:900px;
+      }
+      &.right{
+        left:1200px;
+      }
+      &.offscreen-right{
+        left:1500px;
+      }
+
+      &.helper{
+        opacity: 0;
+      }
+
+      &.animation{
+        -webkit-transition: left 0.5s;
+      }
+
+    }
+
+    .image{
+      position:absolute;
+
+      background-position: center;
+      background-repeat:no-repeat;
+
+      top:390px;
+      width:300px;
+      height: 300px;
+      z-index: 50;
+    }
+
+    .image:nth-child(1){
+      background-size: 35%;
+      left:210px;
+    }
+    .image:nth-child(2){
+      background-size: 45%;
+      left:510px;
+    }
+    .image:nth-child(3){
+      background-size: 75%;
+      left:810px;
+    }
+    .image:nth-child(4){
+      background-size: 40%;
+      left:1110px;
+    }
+    .image:nth-child(5){
+      background-size: 70%;
+      left:1410px;
+    }
+
+    .shade{
+      position:absolute;
+      z-index:1;
+
+      background-color:rgba(0,0,0,0.2);
+
+      top:390px;
+      width:300px;
+      height: 300px;
+      z-index: 10;
+
+      -webkit-box-sizing:border-box;
+      border:1px solid rgba(255,255,255,0.5);
+    }
+
+    .shade:nth-child(1){
+      left:210px;
+    }
+    .shade:nth-child(2){
+      left:510px;
+    }
+    .shade:nth-child(3){
+      left:810px;
+    }
+    .shade:nth-child(4){
+      left:1110px;
+    }
+    .shade:nth-child(5){
+      left:1410px;
+    }
+
+  }
+
+  .brand-title{
+    top:80px;
+    left:0px;
+    width: 1920px;
+    height: 100px;
+    position: absolute;
+    font-size:120px;
+    color: white;
+    text-align: center;
+    z-index: 50;
+    letter-spacing: 3.5px;
+  }
+  .brand-text{
+    top:220px;
+    left:0px;
+    width: 1920px;
+    height: 45px;
+    position: absolute;
+    font-size:55px;
+    color: white;
+    text-align: center;
+    z-index: 50;
+  }
+
+  .swipe-container{
+    z-index: 500;
+    @include screen-size;
+    position:absolute;
+    top:0px;
+    left:0px;
+    opacity: 0;
+    background-color: rgba(0,0,0,0.8);
+    .hand{
+      position:absolute;
+      top:430px;
+      height:220px;
+      width: 220px;
+      z-index: 25;
+      opacity: 0;
+
+      background-image: url(/mobile/images/3-start/right-hand.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      z-index: 50;
+    }
+    .area{
+      background: #649cc9;
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#649cc9), color-stop(100%,#207dc9), color-stop(100%,#7db9e8));
+
+      position:absolute;
+      top:415px;
+      height:250px;
+      left:500px;
+      right:500px;
+      z-index: 25;
+      opacity: 0.7;
+      border-radius: 125px;
+
+      position: absolute;
+      font-size:45px;
+      color: white;
+      text-align: center;
+      line-height: 250px;
+    }
+    .text{
+      position:absolute;
+      top:415px;
+      height:250px;
+      left:450px;
+      right:500px;
+      z-index: 25;
+      opacity: 1;
+      line-height: 250px;
+
+      font-size:60px;
+      color: white;
+      text-align: center;
+    }
+  }
+}

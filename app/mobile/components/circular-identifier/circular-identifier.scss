@@ -1,0 +1,47 @@
+.circular-identifier {
+  position:absolute;
+  @include screen-size;
+  z-index: 500;
+  .arc-container{
+    height: 500px;
+    width: 800px;
+
+    position:absolute;
+
+    .hand-arc{
+      position:absolute;
+      width: 800px;
+      height: 500px;
+
+    }
+
+    .text{
+      position:absolute;
+      top:65px;
+      left:240px;
+      overflow: hidden;
+
+      width: 0px;
+      height: 125px;
+      background-position: left;
+      background-repeat:no-repeat;
+      //background-image: url(/mobile/images/3-start/use-your-hands.png);
+      background-size: cover;
+      opacity: 0;
+
+      .inside-text{
+        left:25px;
+        position:absolute;
+        width: 400px;
+        height: 125px;
+
+        font-size:50px;
+        color: white;
+        text-align: center;
+        line-height: 62.5px;
+        z-index: 50;
+      }
+    }
+
+  }
+}

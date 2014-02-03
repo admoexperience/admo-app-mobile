@@ -1,0 +1,172 @@
+.package-component {
+  position:absolute;
+  @include screen-size;
+  z-index: 20;
+  left:0px;
+  top:-1080px;
+  -webkit-transition: top 1s;
+
+  .package-container{
+
+    position:absolute;
+    @include screen-size;
+    -webkit-perspective:1500;
+
+    .plain{
+      position:absolute;
+      width: 1920px;
+      height: 1080px;
+      //background-color: rgba(225,255,255,0.2);
+
+      -webkit-transform-origin:50% 100%;
+      -webkit-transform: rotateX(60deg);
+      -webkit-transition: -webkit-transform 1s, left 1s, top 1s;
+
+      .content{
+        position:absolute;
+        margin-top: 60px;
+        left:750px;
+        top:20px;
+        width:420px;
+        height: 450px;
+
+        -webkit-transform: rotate(-30deg);
+        -webkit-transition: -webkit-transform 1s, top 1s,left 1s;
+
+        .top{
+          background-position: center;
+          background-repeat:no-repeat;
+          background-size: contain;
+          background-color: rgba(0,0,0,0.4);
+          width:100%;
+          left:0px;
+          top:0px;
+          height: 150px;
+          -webkit-transition: background-color 0.5s;
+        }
+        .bottom{
+          background-position: center;
+          background-repeat:no-repeat;
+          background-size: contain;
+          background-color: rgba(0,0,0,0.5);
+          width:100%;
+          left:0px;
+          top:150px;
+          height: 300px;
+        }
+      }
+    }
+
+    .plain-left{
+      left:-200px;
+      top: -50px;
+      .content{
+        .top{
+          background-image: url(/mobile/images/6-contract/left-price.png);
+        }
+        .bottom{
+          background-image: url(/mobile/images/6-contract/left-wording.png);
+        }
+      }
+    }
+    .plain-center{
+      left:0px;
+      top: 0px;
+      .content{
+        .top{
+          background-image: url(/mobile/images/6-contract/center-price.png);
+        }
+        .bottom{
+          background-image: url(/mobile/images/6-contract/center-wording.png);
+        }
+      }
+    }
+    .plain-right{
+      left:200px;
+      top: 50px;
+      .content{
+        .top{
+          background-image: url(/mobile/images/6-contract/right-price.png);
+        }
+        .bottom{
+          background-image: url(/mobile/images/6-contract/right-wording.png);
+        }
+      }
+    }
+  }
+
+  .selector-container{
+    left:265px;
+    top:350px;
+    right:265px;
+    height: 470px;
+    overflow: hidden;
+    position:absolute;
+    z-index:45;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+
+    .selector{
+      top:0px;
+      width:420px;
+      height: 450px;
+      position:absolute;
+      z-index:45;
+
+      border-color: rgba(255,255,255,0.7);
+      border-width:10px;
+      border-style:solid;
+
+      &.offscreen-left{
+        left:-475px;
+      }
+      &.left{
+        left:0px;
+      }
+      &.center{
+        left:475px;
+      }
+      &.right{
+        left:950px;
+      }
+      &.offscreen-right{
+        left:1425px;
+      }
+
+      &.helper{
+        opacity: 0;
+      }
+
+      &.animation{
+        -webkit-transition: left 0.5s;
+      }
+
+    }
+  }
+
+  .package-title{
+    top:80px;
+    left:0px;
+    width: 1920px;
+    height: 100px;
+    position: absolute;
+    font-size:120px;
+    color: white;
+    text-align: center;
+    z-index: 50;
+    letter-spacing: 3.5PX;
+  }
+  .package-text{
+    top:220px;
+    left:0px;
+    width: 1920px;
+    height: 45px;
+    position: absolute;
+    font-size:55px;
+    color: white;
+    text-align: center;
+    z-index: 50;
+    letter-spacing: 2px;
+  }
+
+}

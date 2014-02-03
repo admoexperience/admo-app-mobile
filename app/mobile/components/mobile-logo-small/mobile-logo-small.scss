@@ -1,0 +1,18 @@
+.mobile-logo-small {
+  position:absolute;
+  @include screen-size;
+  z-index: 10;
+
+  .logo {
+    position: absolute;
+    background-image: url(/mobile/images/0-global/mobile-logo.png);
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 10px;
+    top: 870px;
+    left: 1700px;
+    opacity: 0.5;
+  }
+}
